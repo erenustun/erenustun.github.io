@@ -20,7 +20,8 @@ header {
     grid-area: header;
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
+    height: 100px;
 }
 
 header h1, .main-nav {
@@ -122,17 +123,18 @@ nav {
 
 .about-container {
     grid-area: about;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background: #EEE;
     color: #303030;
+    background: #EEE;
     padding: 10px 0;
 }
 
 .about {
-    margin: 0 auto;
     display: flex;
     align-items: center;
+    height: 100vh;
+    margin: 0 auto;
     line-height: 1.5;
 }
 
@@ -282,7 +284,6 @@ footer {
     header {
         grid-area: header;
         display: block !important;
-        margin: 20px;
         height: 50px;
     }
 
@@ -342,9 +343,12 @@ footer {
         font-family: 'Lato', sans-serif;
     }
 
-    .about {
-        grid-area: about;
+    .about-container {
         display: flex;
+        align-items: center;
+    }
+
+    .about {
         height: auto;
     }
 
@@ -355,11 +359,7 @@ footer {
     }
 
     .about-text {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        margin: 40px auto;
     }
 
     #about-title {
